@@ -81,5 +81,24 @@ body header .right {
 /**********************
 * BODY / Block 1
 **********************/
+.search-bar {
+    display: flex;
+    width: 400px;
+}
 
+.search-bar input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+}
 
+.search-bar button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #191B22;
+    border-radius: 0 5px 5px 0;
+}
+.niv-xp{
+
+}
