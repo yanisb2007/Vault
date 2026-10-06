@@ -1,16 +1,85 @@
-body {
+ody {
     background-color: #0C0E14;
+    padding: 0;
+    margin: 0;
 }
 
-body.header-content {
+.main-padding {
+    padding: 0 60px;
+}
+
+/**********************
+* HEADER
+**********************/
+body header {
     display: flex;
     align-items: center;
-    gap: 10px;
+    justify-content: space-between;
+    min-height: 70px;
+    background-color: #070910;
 }
 
-body.header-content .logo {
-    width: 32px;
-    height: 32px;
-    object-fit: cover;
+body header .left {
+    display: flex;
+    align-items: center;
 }
+
+body header .logo {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+body header .logo img {
+    height: 32px;
+    width: 32px;
+}
+
+body header .logo span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #E2E2EB;
+    font-family: 'Space Grotesk', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 24px;
+    font-size: 18px;
+}
+
+body header .logo span::after{
+    content: '';
+    display: block;
+    height: 6px;
+    width: 6px;
+    background-color: #D0BCFF;
+    border-radius: 50%;
+}
+
+body header nav ul {
+    display: flex;
+    gap: 10px;
+    list-style-type: none;
+}
+
+body header nav a {
+    color: #CBC3D7;
+    text-decoration: none;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+}
+body header nav a.active {
+    color: #D0BCFF;
+}
+
+body header .right {
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+
+/**********************
+* BODY / Block 1
+**********************/
+
 
