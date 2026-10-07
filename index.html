@@ -3,295 +3,186 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Titre de ta page</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <title>Vault</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-<header class="main-padding">
-    <!-- Left part -->
+<header>
     <div class="left">
         <div class="logo">
-            <img src="assets/images/logo.jpg" alt="Logo" />
+            <img src="assets/images/logo.jpg" alt="Logo">
             <span>VAULT</span>
         </div>
 
         <nav>
-            <ul>
-                <li>
-                    <a href="#" class="active">Catalogue</a>
-                </li>
-                <li>
-                    <a href="#">Mon profil</a>
-                </li>
-                <li>
-                    <a href="#">Administration</a>
-                </li>
-            </ul>
+            <a href="#" class="active">Catalogue</a>
+            <a href="#">Mon profil</a>
+            <a href="#">Administration</a>
         </nav>
     </div>
 
-    <!-- Right part -->
     <div class="right">
-
-
-    <div class="search-bar">
-        <input type="text" placeholder="Rechercher...">
-        <button>🔍</button>
-    </div>
-    <div class="niv-xp">
-        <a> Niv.   XP </a>
-
-    <div class="logo">
-        <img src="assets/images/profile.jpg" alt="Logo" />
-
+        <div class="search-bar">
+            <input type="text" placeholder="Rechercher...">
+            <button>🔍</button>
+        </div>
+        <span>Niv. XP</span>
+        <img class="profile" src="assets/images/profile.jpg" alt="Profil">
     </div>
 </header>
-<div class="main-padding">
-</div>
 
+<main>
+    <h1>Explorer votre univers pop-culture</h1>
 
-<h1>Explorer votre univers pop-culture</h1>
-
-<section class="library">
-
-    <div class="toolbar">
-
-        <!-- Recherche -->
-        <div class="search-wrapper">
-            <span class="search-icon"></span>
-
-            <input
-                    class="search-input"
-                    type="text"
-                    placeholder="Rechercher une œuvre..."
-            >
-        </div>
-
-        <!-- Filtres -->
-        <div class="filters">
-            <button class="filter active">TOUS</button>
-            <button class="filter">FILMS (3)</button>
-            <button class="filter">SÉRIES (3)</button>
-            <button class="filter">JEUX (3)</button>
-        </div>
-
-        <!-- Tri -->
-        <div class="sort">
-            <span>TRIER PAR :</span>
-
-            <select>
-                <option>Plus récents</option>
-                <option>Plus anciens</option>
-                <option>Alphabétique</option>
-                <option>Note</option>
-            </select>
-        </div>
-
-    </div>
-
-    <!-- Informations -->
-    <div class="bottom-bar">
-
-        <div class="counter">
-            <span class="funnel"></span>
-            <span>9 œuvres affichées sur 9</span>
-        </div>
-
-    </div>
-
-</section>
-
-<!-- films -->
-<h2>Films</h2>
-
-<div class="oeuvres">
-
-    <div class="carte">
-        <div class=" image">
-            <img src="https://cdng.europosters.eu/pod_public/1300/266355.jpg" alt="" />
-        </div>
-        <h3>titanic</h3>
-        <p>Il raconte l'histoire de deux passagers du paquebot Titanic. L'une, Rose, est une passagère de première classe qui tente de se suicider pour se libérer des contraintes imposées par son entourage, et le second, Jack, est un vagabond embarqué à la dernière minute en troisième classe pour émigrer aux États-Unis.</p>
-    </div>
-
-    <div class="carte">
-        <div class=" image">
-            <img src="https://fr.web.img2.acsta.net/pictures/23/04/05/17/17/4725967.jpg" alt="" />
-        </div>
-        <h3>A contre sens</h3>
-        <p>Noah découvre bientôt que derrière l'image d'un fils modèle, Nick cache une vie de bagarre, de jeu et de courses automobiles illégales. Malgré l'abîme qui les sépare, tous deux commencent à ressentir une attirance irrésistible qui se transformera bientôt en feu et en folle passion.</p>
-    </div>
-
-    <div class="carte">
-        <div class=" image">
-            <img src="https://media.posterlounge.com/img/products/710000/707663/707663_poster.jpg" alt="" />
-        </div>
-        <h3>Le parrain</h3>
-        <p>Le Parrain raconte une transition dynastique, après la seconde guerre mondiale, de 1945 à 1955, au sein d'une famille de gangsters italiens, qui fait partie d'un cartel de 5 familles à New York, avec des flash-backs remontant au début du siècle.</p>
-    </div>
-
-</div>
-
-
-<!-- séries -->
-<h2>Séries</h2>
-
-<div class="oeuvres">
-
-    <div class="carte">
-        <div class=" image">
-            <img src="https://m.media-amazon.com/images/M/MV5BMzU5ZGYzNmQtMTdhYy00OGRiLTg0NmQtYjVjNzliZTg1ZGE4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="" />
-        <h3>Breaking Bad</h3>
-        <p>La série raconte l'histoire de Walter White un professeur de chimie surqualifié et père de famille, qui, ayant appris qu'il est atteint d'un cancer du poumon en phase terminale, sombre dans le crime pour assurer l'avenir financier de sa famille.</p>
-        </div>
-    </div>
-
-
-    <div class="carte">
-        <div class=" image">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5DU3vHasM7HF9hrRj3z1JBdordNGISVQtQku0jHF0zA&s=10" alt="" />
-        <h3>The Boys</h3>
-        <p>The Boys se déroule dans un univers où des individus ayant des supers-pouvoirs sont reconnus comme des supers héros par le grand public, travaillant pour la puissante société Vought International, qui s'occupe de les promouvoir en les commercialisant.</p>
-        </div>
-    </div>
-
-    <div class="carte">
-        <div class=" image">
-            <img src="https://fr.web.img3.acsta.net/pictures/22/06/07/11/57/5231272.jpg" alt="" />
-        <h3>Peaky Blinders</h3>
-        <p>Tommy Shelby est un vétéran décoré de la Première Guerre mondiale. Avec sa fratrie, il est à la tête d'un gang, les Peaky Blinders, ainsi nommés, car ils dissimulent des lames de rasoir dans les visières de leurs casquettes pour aveugler ou réduire au silence les témoins de leurs actes.</p>
-        </div>
-    </div>
-
-</div>
-<!-- Video games -->
-<h2>Jeux vidéo</h2>
-
-<div class="oeuvres">
-
-    <div class="carte">
-        <div class=" image">
-            <img src="https://i.ebayimg.com/images/g/Y9IAAOSwM2ddrpX2/s-l1200.jpg" alt="" />
-            <h3>Minecraft</h3>
-        <p>Minecraft est un jeu vidéo de type bac à sable où les joueurs construisent, explorent, collectent des ressources et survivent dans des mondes composés de blocs .</p>
-        </div>
-    </div>
-
-    <div class="carte">
-        <div class=" image">
-            <img src="https://i.ebayimg.com/images/g/rKYAAOSwqY5fhrmq/s-l1200.jpg" alt="" class="imaj"/>
-            <h3>Fornite</h3>
-        <p>Fortnite est un jeu de tir de type Battle Royale, principalement jouable en ligne. Il s'agit d'un mode de jeu dans lequel participent 100 joueurs qui doivent s'éliminer les uns les autres.</p>
-        </div>
-    </div>
-
-    <div class="carte">
-        <div class=" image">
-            <img src="https://e-enfance.org/wp-content/uploads/2021/06/League-of-legends-redimensionn%E2%80%9A.jpg" alt="" class="imaj" />
-            <h3>league of legends</h3>
-        <p>League of Legends est un jeu dans lequel deux équipes de cinq joueurs s'affrontent dans une arène. Pour gagner la partie, il faut réussir à détruire la base adversaire.</p>
-        </div>
-    </div>
-</div>
-
-
-<section class="card">
-
-    <div class="content">
-
-        <div class="eyebrow">
-            ARCHITECTURE WEB SPRINT 1 & 4
-        </div>
-
-        <h1>Progression de votre Archivage Pop-Culture</h1>
-
-        <p class="description">
-            Chaque œuvre annotée enrichit votre rang et consolide la persistance locale de vos trésors culturels.
-        </p>
-
-        <div class="stats">
-
-            <div class="stat">
-                <div class="value purple">4 / 9</div>
-                <div class="label">ŒUVRES AMORCÉES</div>
+    <section class="library">
+        <div class="toolbar">
+            <div class="search-wrapper">
+                <span class="search-icon"></span>
+                <input class="search-input" type="text" placeholder="Rechercher une œuvre...">
             </div>
 
-            <div class="stat">
-                <div class="value orange">3.5/ 5</div>
-                <div class="label">MOYENNE NOTÉE</div>
+            <div class="filters">
+                <button class="filter active">TOUS</button>
+                <button class="filter">FILMS (3)</button>
+                <button class="filter">SÉRIES (3)</button>
+                <button class="filter">JEUX (3)</button>
             </div>
 
-            <div class="stat">
-                <div class="value purple">+60 XP</div>
-                <div class="label">GAGNÉS CE SPRINT</div>
+            <div class="sort">
+                <span>TRIER PAR :</span>
+                <select>
+                    <option>Plus récents</option>
+                    <option>Plus anciens</option>
+                    <option>Alphabétique</option>
+                    <option>Note</option>
+                </select>
             </div>
-
         </div>
 
-    </div>
+        <div class="bottom-bar">
+            <span class="counter">▼ 9 œuvres affichées sur 9</span>
+        </div>
+    </section>
 
-    <div class="progress-container">
+    <section>
+        <h2>Films</h2>
+        <div class="oeuvres">
+            <article class="carte">
+                <img src="https://cdng.europosters.eu/pod_public/1300/266355.jpg" alt="Titanic">
+                <h3>Titanic</h3>
+                <p>Il raconte l'histoire de deux passagers du paquebot Titanic, Rose et Jack, issus de milieux très différents.</p>
+            </article>
 
-        <div class="circle">
+            <article class="carte">
+                <img src="https://fr.web.img2.acsta.net/pictures/23/04/05/17/17/4725967.jpg" alt="À contre-sens">
+                <h3>À contre-sens</h3>
+                <p>Noah découvre que Nick mène une vie faite de bagarres, de jeux et de courses automobiles. Malgré leurs différences, une attirance naît entre eux.</p>
+            </article>
 
-            <svg viewBox="0 0 150 150">
-                <circle
-                        class="circle-bg"
-                        cx="73"
-                        cy="73"
-                        r="60"
-                />
+            <article class="carte">
+                <img src="https://media.posterlounge.com/img/products/710000/707663/707663_poster.jpg" alt="Le Parrain">
+                <h3>Le Parrain</h3>
+                <p>Le Parrain raconte la transition dynastique d'une famille de gangsters italiens à New York après la Seconde Guerre mondiale.</p>
+            </article>
+        </div>
+    </section>
 
-                <circle
-                        class="circle-progress"
-                        cx="73"
-                        cy="73"
-                        r="60"
-                />
-            </svg>
+    <section>
+        <h2>Séries</h2>
+        <div class="oeuvres">
+            <article class="carte">
+                <img src="https://m.media-amazon.com/images/M/MV5BMzU5ZGYzNmQtMTdhYy00OGRiLTg0NmQtYjVjNzliZTg1ZGE4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Breaking Bad">
+                <h3>Breaking Bad</h3>
+                <p>Walter White, professeur de chimie, sombre dans le crime après avoir appris qu'il est atteint d'un cancer en phase terminale.</p>
+            </article>
 
-            <div class="circle-text">
-                <span class="percentage">67%</span>
-                <span class="indexed">INDEXÉ</span>
+            <article class="carte">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5DU3vHasM7HF9hrRj3z1JBdordNGISVQtQku0jHF0zA&s=10" alt="The Boys">
+                <h3>The Boys</h3>
+                <p>Dans cet univers, les super-héros sont de véritables célébrités contrôlées par la puissante société Vought International.</p>
+            </article>
+
+            <article class="carte">
+                <img src="https://fr.web.img3.acsta.net/pictures/22/06/07/11/57/5231272.jpg" alt="Peaky Blinders">
+                <h3>Peaky Blinders</h3>
+                <p>Tommy Shelby dirige avec sa famille le gang des Peaky Blinders dans l'Angleterre de l'après-Première Guerre mondiale.</p>
+            </article>
+        </div>
+    </section>
+
+    <section>
+        <h2>Jeux vidéo</h2>
+        <div class="oeuvres">
+            <article class="carte">
+                <img src="https://i.ebayimg.com/images/g/Y9IAAOSwM2ddrpX2/s-l1200.jpg" alt="Minecraft">
+                <h3>Minecraft</h3>
+                <p>Un jeu de type bac à sable où les joueurs construisent, explorent, collectent des ressources et survivent.</p>
+            </article>
+
+            <article class="carte">
+                <img src="https://i.ebayimg.com/images/g/rKYAAOSwqY5fhrmq/s-l1200.jpg" alt="Fortnite">
+                <h3>Fortnite</h3>
+                <p>Un jeu de tir en ligne où les joueurs s'affrontent notamment dans un mode Battle Royale.</p>
+            </article>
+
+            <article class="carte">
+                <img src="https://e-enfance.org/wp-content/uploads/2021/06/League-of-legends-redimensionn%E2%80%9A.jpg" alt="League of Legends">
+                <h3>League of Legends</h3>
+                <p>Deux équipes de cinq joueurs s'affrontent dans une arène et cherchent à détruire la base adverse.</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="card">
+        <div class="content">
+            <div class="eyebrow">ARCHITECTURE WEB SPRINT 1 & 4</div>
+            <h2>Progression de votre Archivage Pop-Culture</h2>
+            <p class="description">Chaque œuvre annotée enrichit votre rang et consolide la persistance locale de vos trésors culturels.</p>
+
+            <div class="stats">
+                <div class="stat">
+                    <strong class="value purple">4 / 9</strong>
+                    <span>ŒUVRES AMORCÉES</span>
+                </div>
+                <div class="stat">
+                    <strong class="value orange">3.5 / 5</strong>
+                    <span>MOYENNE NOTÉE</span>
+                </div>
+                <div class="stat">
+                    <strong class="value purple">+60 XP</strong>
+                    <span>GAGNÉS CE SPRINT</span>
+                </div>
             </div>
-
         </div>
 
-    </div>
-
-</section>
-
+        <div class="progress-container">
+            <div class="circle">
+                <svg viewBox="0 0 150 150">
+                    <circle class="circle-bg" cx="75" cy="75" r="60"></circle>
+                    <circle class="circle-progress" cx="75" cy="75" r="60"></circle>
+                </svg>
+                <div class="circle-text">
+                    <strong>67%</strong>
+                    <span>INDEXÉ</span>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
 
 <footer class="navbar">
-
     <div class="brand">
-        <div class="brand-title">
-            VAULT
-            <span>// Plateforme Pop-Culture</span>
-        </div>
-
-        <div class="subtitle">
-            Projet Web Bac+1 • 4 Sprints • Architecture native HTML/CSS/PHP/JS
-        </div>
+        <div class="brand-title">VAULT <span>// Plateforme Pop-Culture</span></div>
+        <div class="subtitle">Projet Web Bac+1 • 4 Sprints • Architecture native HTML/CSS/PHP/JS</div>
     </div>
 
     <nav class="nav">
         <a href="#">Catalogue</a>
         <a href="#">Progression</a>
         <a href="#">Audit &amp; Sprints</a>
-
-        <div class="version">
-            <span class="version-dot"></span>
-            v1.4.0-stable
-        </div>
+        <span class="version"><span class="version-dot"></span>v1.4.0-stable</span>
     </nav>
-
 </footer>
 </body>
 </html>
