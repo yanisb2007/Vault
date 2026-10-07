@@ -553,3 +553,373 @@ body {
         flex-wrap: wrap;
         gap: 15px 20px;
     }
+}
+    body {
+        background: #080b10;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+
+    /* =====================================================
+       BLOC PRINCIPAL
+    ===================================================== */
+
+    .card {
+        position: relative;
+
+        width: 1185px;
+        height: 248px;
+
+        margin: 0 auto;
+
+        overflow: hidden;
+
+        background:
+                linear-gradient(
+                        90deg,
+                        #0b0e13 0%,
+                        #0b0e13 70.4%,
+                        #11121a 70.4%,
+                        #1b1929 100%
+                );
+    }
+
+
+    /* =====================================================
+       CONTENU GAUCHE
+    ===================================================== */
+
+    .content {
+        position: absolute;
+
+        left: 41px;
+        top: 52px;
+
+        width: 760px;
+    }
+
+
+    /* =====================================================
+       PETITE LIGNE ORANGE
+    ===================================================== */
+
+    .eyebrow {
+        height: 14px;
+
+        display: flex;
+        align-items: center;
+
+        color: #f3b43d;
+
+        font-family: "Courier New", monospace;
+        font-size: 10px;
+        font-weight: bold;
+
+        letter-spacing: 1.3px;
+        white-space: nowrap;
+    }
+
+    .eyebrow::before {
+        content: "✥";
+
+        display: inline-block;
+
+        margin-right: 7px;
+
+        color: #f3b43d;
+
+        font-family: Arial, sans-serif;
+        font-size: 15px;
+    }
+
+
+    /* =====================================================
+       TITRE
+    ===================================================== */
+
+    h1 {
+        margin-top: 4px;
+
+        color: #dedce5;
+
+        font-size: 21px;
+        line-height: 25px;
+
+        font-weight: 700;
+    }
+
+
+    /* =====================================================
+       DESCRIPTION
+    ===================================================== */
+
+    .description {
+        width: 350px;
+
+        margin-top: 2px;
+
+        color: #aaa9b3;
+
+        font-size: 14px;
+        line-height: 20px;
+
+        font-weight: 400;
+    }
+
+
+    /* =====================================================
+       STATISTIQUES
+    ===================================================== */
+
+    .stats {
+        display: flex;
+        align-items: flex-start;
+
+        margin-top: 14px;
+    }
+
+
+    /* chaque bloc */
+
+    .stat {
+        height: 30px;
+
+        display: flex;
+        flex-direction: column;
+
+        padding-right: 25px;
+    }
+
+
+    /* séparateur */
+
+    .stat + .stat {
+        padding-left: 25px;
+
+        border-left: 1px solid #2a2d34;
+    }
+
+
+    /* =====================================================
+       VALEURS
+    ===================================================== */
+
+    .value {
+        height: 26px;
+
+        font-family: "Courier New", monospace;
+
+        font-size: 25px;
+        line-height: 26px;
+
+        font-weight: bold;
+
+        letter-spacing: 0.3px;
+    }
+
+
+    /* violet */
+
+    .purple {
+        color: #c8b0ff;
+    }
+
+
+    /* orange */
+
+    .orange {
+        color: #f2b33c;
+    }
+
+    /* =====================================================
+       BLOC DE DROITE
+    ===================================================== */
+
+    .progress-container {
+        position: absolute;
+
+        top: 24px;
+        right: 40px;
+
+        width: 100px;
+        height: 50px;
+
+        border-radius: 8px;
+
+        background: #191923;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    /* =====================================================
+       CERCLE
+    ===================================================== */
+
+    .circle {
+        position: relative;
+
+        width: 133px;
+        height: 133px;
+
+        margin-top: 21px;
+    }
+
+
+    /* SVG */
+
+    .circle svg {
+        position: absolute;
+
+        left: 0;
+        top: 0;
+
+        width: 133px;
+        height: 133px;
+
+        transform: rotate(-90deg);
+    }
+
+
+    /* cercle gris */
+
+    .circle-bg {
+        fill: none;
+
+        stroke: #3a3a43;
+
+        stroke-width: 10;
+    }
+
+
+    /* cercle violet */
+
+    .circle-progress {
+        fill: none;
+
+        stroke: #cbb2ff;
+
+        stroke-width: 10;
+
+        stroke-linecap: round;
+
+        /*
+           circonférence :
+           2 × π × 66 ≈ 414.69
+
+           67% = 277.83
+        */
+
+        stroke-dasharray: 414.69;
+        stroke-dashoffset: 136.86;
+    }
+
+
+    /* =====================================================
+       TEXTE DU CERCLE
+    ===================================================== */
+
+    .circle-text {
+        position: absolute;
+
+        left: 0;
+        top: 0;
+
+        width: 133px;
+        height: 133px;
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    /* 67% */
+
+    .percentage {
+        color: #dfdde6;
+
+        font-size: 18px;
+        line-height: 19px;
+
+        font-weight: 600;
+    }
+
+
+    /* INDEXÉ */
+
+    .indexed {
+        margin-top: 2px;
+
+        color: #92909a;
+
+        font-family: "Courier New", monospace;
+
+        font-size: 8px;
+        line-height: 9px;
+
+        letter-spacing: 0.7px;
+    }
+
+
+    /* =====================================================
+       RESPONSIVE
+    ===================================================== */
+
+    @media (max-width: 900px) {
+
+        .card {
+            width: 100%;
+        }
+
+        .content {
+            left: 30px;
+        }
+
+        .progress-container {
+            right: 25px;
+        }
+    }
+
+
+    @media (max-width: 700px) {
+
+        .card {
+            height: auto;
+            min-height: 600px;
+
+            background: #0b0e13;
+        }
+
+        .content {
+            position: relative;
+
+            left: auto;
+            top: auto;
+
+            width: auto;
+
+            padding: 40px 25px;
+        }
+
+        .description {
+            width: 100%;
+        }
+
+        .stats {
+            flex-wrap: wrap;
+        }
+
+        .progress-container {
+            position: relative;
+
+            top: auto;
+            right: auto;
+
+            margin: 0 auto 30px;
+        }
+    }
