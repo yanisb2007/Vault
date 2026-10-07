@@ -455,3 +455,101 @@ body {
 .imaj {
     border-radius: 12px;
 }
+
+    body {background:
+            #f4f4f4;
+    }
+    font-family: "Courier New", monospace;
+}
+
+.navbar {
+    height: 128px;
+    background: #0c0e13;
+    color: #d8d5df;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 40px 0 44px;
+    border-top: 7px solid #090b10;
+}
+
+/* Partie gauche */
+.brand {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.brand-title {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.brand-title span {
+    color: #85818e;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.subtitle {
+    color: #96919f;
+    font-size: 10px;
+    letter-spacing: 0.3px;
+}
+
+/* Navigation */
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 27px;
+}
+
+.nav a {
+    color: #d3cedb;
+    text-decoration: none;
+    font-size: 12px;
+    transition: color 0.2s ease;
+}
+
+.nav a:hover {
+    color: #ffffff;
+}
+
+/* Badge */
+.version {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+    background: #171a22;
+    padding: 6px 9px;
+
+    color: #bdb9c5;
+    font-size: 10px;
+    letter-spacing: 0.2px;
+}
+
+.version-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #ffb84d;
+    box-shadow: 0 0 8px rgba(255, 184, 77, 0.25);
+}
+
+@media (max-width: 700px) {
+    .navbar {
+        height: auto;
+        padding: 25px;
+        gap: 25px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav {
+        flex-wrap: wrap;
+        gap: 15px 20px;
+    }
