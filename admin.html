@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vault | Administration</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header class="topbar">
+        <div class="left">
+            <div class="logo">
+                <img src="assets/images/logo.jpg" alt="Logo Vault">
+                <span>VAULT</span>
+            </div>
+
+            <nav class="main-nav" aria-label="Navigation principale">
+                <a href="index.html">Catalogue</a>
+                <a href="profile.html">Mon profil</a>
+                <a href="admin.html" class="active">Administration</a>
+            </nav>
+        </div>
+
+        <div class="right">
+            <label class="search-bar" aria-label="Rechercher dans le site">
+                <input type="text" class="header-search" placeholder="Rechercher..." aria-label="Rechercher">
+                <button type="button" aria-label="Lancer la recherche">🔍</button>
+            </label>
+            <div class="xp-badge"><span>Niv. XP</span></div>
+            <img class="profile-img" src="assets/images/profile.jpg" alt="Photo de profil">
+        </div>
+    </header>
+
+    <main>
+        <div class="page-header">
+            <h1>Administration</h1>
+            <p>Vue d'ensemble de la collection, des statuts de modération et des actions à mener.</p>
+        </div>
+
+        <section class="summary-grid" aria-label="Statistiques d'administration">
+            <article class="summary-card">
+                <h3>Catalogue</h3>
+                <div class="metric"><span>Films</span><strong>3</strong></div>
+                <div class="metric"><span>Séries</span><strong>3</strong></div>
+                <div class="metric"><span>Jeux</span><strong>3</strong></div>
+            </article>
+
+            <article class="summary-card">
+                <h3>Modération</h3>
+                <div class="metric"><span>Validés</span><strong>8</strong></div>
+                <div class="metric"><span>En attente</span><strong>1</strong></div>
+                <div class="metric"><span>À corriger</span><strong>2</strong></div>
+            </article>
+
+            <article class="summary-card">
+                <h3>Actions</h3>
+                <ul class="admin-actions">
+                    <li><strong>Importer</strong><span>12 nouveaux titres</span></li>
+                    <li><strong>Vérifier</strong><span>2 doublons</span></li>
+                    <li><strong>Publier</strong><span>3 mises à jour</span></li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="table-card">
+            <h3>Modération du catalogue</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Titre</th>
+                        <th>Catégorie</th>
+                        <th>Statut</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Titanic</td>
+                        <td>Film</td>
+                        <td><span class="status ok">Validé</span></td>
+                        <td><button type="button" class="action-btn primary">Éditer</button></td>
+                    </tr>
+                    <tr>
+                        <td>The Boys</td>
+                        <td>Série</td>
+                        <td><span class="status warning">À revoir</span></td>
+                        <td><button type="button" class="action-btn">Contrôler</button></td>
+                    </tr>
+                    <tr>
+                        <td>Fortnite</td>
+                        <td>Jeu</td>
+                        <td><span class="status danger">Erreur</span></td>
+                        <td><button type="button" class="action-btn">Corriger</button></td>
+                    </tr>
+                    <tr>
+                        <td>Le Parrain</td>
+                        <td>Film</td>
+                        <td><span class="status ok">Validé</span></td>
+                        <td><button type="button" class="action-btn primary">Éditer</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer class="navbar">
+        <div class="brand">
+            <div class="brand-title">VAULT <span>// Plateforme Pop-Culture</span></div>
+            <div class="subtitle">Projet Web Bac+1 • 4 Sprints • Architecture native HTML/CSS/PHP/JS</div>
+        </div>
+
+        <nav class="nav" aria-label="Navigation du footer">
+            <a href="index.html">Catalogue</a>
+            <a href="profile.html">Progression</a>
+            <a href="admin.html">Audit &amp; Sprints</a>
+            <span class="version"><span class="version-dot"></span>v1.4.0-stable</span>
+        </nav>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
