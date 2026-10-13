@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vault | Mon profil</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header class="topbar">
+        <div class="left">
+            <div class="logo">
+                <img src="assets/images/logo.jpg" alt="Logo Vault">
+                <span>VAULT</span>
+            </div>
+
+            <nav class="main-nav" aria-label="Navigation principale">
+                <a href="index.html">Catalogue</a>
+                <a href="profile.html" class="active">Mon profil</a>
+                <a href="admin.html">Administration</a>
+            </nav>
+        </div>
+
+        <div class="right">
+            <label class="search-bar" aria-label="Rechercher dans le site">
+                <input type="text" class="header-search" placeholder="Rechercher..." aria-label="Rechercher">
+                <button type="button" aria-label="Lancer la recherche">🔍</button>
+            </label>
+            <div class="xp-badge"><span>Niv. XP</span></div>
+            <img class="profile-img" src="assets/images/profile.jpg" alt="Photo de profil">
+        </div>
+    </header>
+
+    <main>
+        <div class="page-header">
+            <h1>Mon profil</h1>
+            <p>Suivi de votre historique, de vos favoris et de votre progression dans la bibliothèque.</p>
+        </div>
+
+        <section class="summary-grid" aria-label="Résumé du profil">
+            <article class="summary-card">
+                <div class="user-profile">
+                    <img src="assets/images/profile.jpg" alt="Avatar utilisateur">
+                    <div>
+                        <h2>Yanis B.</h2>
+                        <p>Collectionneur de films &amp; jeux</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="summary-card">
+                <h3>Statistiques</h3>
+                <div class="metric"><span>Œuvres suivies</span><strong>72</strong></div>
+                <div class="metric"><span>À regarder</span><strong>16</strong></div>
+                <div class="metric"><span>Score XP</span><strong>3 280</strong></div>
+            </article>
+
+            <article class="summary-card">
+                <h3>Badges</h3>
+                <div class="metric"><span>Archiviste</span><strong>Actif</strong></div>
+                <div class="metric"><span>Expert cinéma</span><strong>Bronze</strong></div>
+                <div class="metric"><span>Explorateur</span><strong>7/10</strong></div>
+            </article>
+        </section>
+
+        <section class="profile-grid">
+            <article class="panel">
+                <h3>Mes favoris</h3>
+                <div class="favorite-grid">
+                    <div class="favorite-item">
+                        <img src="https://cdng.europosters.eu/pod_public/1300/266355.jpg" alt="Titanic">
+                        <p>Titanic</p>
+                    </div>
+                    <div class="favorite-item">
+                        <img src="https://m.media-amazon.com/images/M/MV5BMzU5ZGYzNmQtMTdhYy00OGRiLTg0NmQtYjVjNzliZTg1ZGE4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Breaking Bad">
+                        <p>Breaking Bad</p>
+                    </div>
+                    <div class="favorite-item">
+                        <img src="https://i.ebayimg.com/images/g/Y9IAAOSwM2ddrpX2/s-l1200.jpg" alt="Minecraft">
+                        <p>Minecraft</p>
+                    </div>
+                    <div class="favorite-item">
+                        <img src="https://fr.web.img3.acsta.net/pictures/22/06/07/11/57/5231272.jpg" alt="Peaky Blinders">
+                        <p>Peaky Blinders</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="panel">
+                <h3>Activité récente</h3>
+                <ul class="activity-list">
+                    <li><strong>Ajouter</strong><span>Titanic à la liste “Coup de cœur”</span></li>
+                    <li><strong>Noter</strong><span>Breaking Bad — 5/5</span></li>
+                    <li><strong>Rechercher</strong><span>“Jeux de survie”</span></li>
+                    <li><strong>Mettre à jour</strong><span>Profil complet à 90%</span></li>
+                </ul>
+            </article>
+        </section>
+    </main>
+
+    <footer class="navbar">
+        <div class="brand">
+            <div class="brand-title">VAULT <span>// Plateforme Pop-Culture</span></div>
+            <div class="subtitle">Projet Web Bac+1 • 4 Sprints • Architecture native HTML/CSS/PHP/JS</div>
+        </div>
+
+        <nav class="nav" aria-label="Navigation du footer">
+            <a href="index.html">Catalogue</a>
+            <a href="profile.html">Progression</a>
+            <a href="admin.html">Audit &amp; Sprints</a>
+            <span class="version"><span class="version-dot"></span>v1.4.0-stable</span>
+        </nav>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
